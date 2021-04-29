@@ -72,7 +72,7 @@ app.put("/api/post/:id", async(req,res) => {
   res.status(201).json({ success: true });
 })
 
-app.use("/image", express.static("uploads"));
+app.use("/image", express.static('/home/nataphon/sambashare'));
 
 app.listen(5000, () => {
     console.log("Start server at port 5000");
